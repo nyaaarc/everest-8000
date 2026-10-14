@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.everest8000.expedition.client.compat.particlerain",
+  "plugin": "dev.everest8000.expedition.client.compat.particlerain.ParticleRainMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "WindManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

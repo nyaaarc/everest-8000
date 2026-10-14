@@ -1,0 +1,7 @@
+{
+  "wind": {
+    "sounds": [
+      {"name": "everest_expedition:wind_loop", "stream": true}
+    ]
+  }
+}

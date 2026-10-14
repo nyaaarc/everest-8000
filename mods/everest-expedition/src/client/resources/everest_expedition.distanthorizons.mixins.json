@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.everest8000.expedition.client.compat.distanthorizons",
+  "plugin": "dev.everest8000.expedition.client.compat.distanthorizons.DistantHorizonsMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CloudRenderHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

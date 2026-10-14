@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:compass"
+    },
+    "title": "Everest Expedition",
+    "description": "Walk from Lukla to the summit. Your stops are on the map (M)",
+    "background": "minecraft:textures/block/packed_ice.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "joined": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "loot": [
+      "everest:kits/lukla"
+    ]
+  }
+}

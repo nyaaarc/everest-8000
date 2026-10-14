@@ -1,0 +1,41 @@
+{
+  "parent": "everest:camp_4",
+  "display": {
+    "icon": {
+      "id": "minecraft:nether_star"
+    },
+    "title": "Summit",
+    "description": "8,849 m · The top of the world",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 20696,
+                "max": 20717
+              },
+              "z": {
+                "min": 7764,
+                "max": 7785
+              },
+              "y": {
+                "min": 2026
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/summit"
+  }
+}

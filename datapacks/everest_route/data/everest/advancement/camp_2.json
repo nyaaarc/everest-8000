@@ -1,0 +1,38 @@
+{
+  "parent": "everest:camp_1",
+  "display": {
+    "icon": {
+      "id": "minecraft:lantern"
+    },
+    "title": "Camp 2",
+    "description": "6,400 m · Advanced base camp in the Western Cwm",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 19326,
+                "max": 19375
+              },
+              "z": {
+                "min": 8126,
+                "max": 8175
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/camp_2"
+  }
+}

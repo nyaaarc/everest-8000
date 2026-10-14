@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.everest8000.expedition.client.compat.nicerskies",
+  "plugin": "dev.everest8000.expedition.client.compat.nicerskies.NicerSkiesMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "NicerSkiesSkyboxMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parent": "everest:camp_2",
+  "display": {
+    "icon": {
+      "id": "minecraft:lead"
+    },
+    "title": "Camp 3",
+    "description": "7,162 m · A ledge on the Lhotse Face",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 20406,
+                "max": 20455
+              },
+              "z": {
+                "min": 8893,
+                "max": 8942
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/camp_3"
+  }
+}

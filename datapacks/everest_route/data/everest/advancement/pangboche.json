@@ -1,0 +1,38 @@
+{
+  "parent": "everest:tengboche",
+  "display": {
+    "icon": {
+      "id": "minecraft:candle"
+    },
+    "title": "Pangboche",
+    "description": "3,985 m · Monastery village above the tree line",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 14466,
+                "max": 14531
+              },
+              "z": {
+                "min": 14152,
+                "max": 14217
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/pangboche"
+  }
+}

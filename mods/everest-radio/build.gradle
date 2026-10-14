@@ -1,0 +1,91 @@
+plugins {
+	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	// Simple Voice Chat's plugin API.
+	exclusiveContent {
+		forRepository {
+			maven {
+				name = 'henkelmax'
+				url = 'https://maven.maxhenkel.de/repository/public'
+			}
+		}
+		filter {
+			includeGroup 'de.maxhenkel.voicechat'
+		}
+	}
+	// Simple Voice Chat itself, for the offline audio test.
+	maven {
+		name = 'Modrinth'
+		url = 'https://api.modrinth.com/maven'
+		content {
+			includeGroup 'maven.modrinth'
+		}
+	}
+}
+
+loom {
+	splitEnvironmentSourceSets()
+
+	mods {
+		"everest_radio" {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings loom.officialMojangMappings()
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Provided at runtime by Simple Voice Chat itself.
+	compileOnly "de.maxhenkel.voicechat:voicechat-api:${project.voicechat_api_version}"
+
+	testImplementation platform('org.junit:junit-bom:5.11.3')
+	testImplementation 'org.junit.jupiter:junit-jupiter'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	// The Simple Voice Chat jar the server runs, for its Opus codec (opus4j and natives) in the offline audio test.
+	testImplementation "maven.modrinth:simple-voice-chat:fabric-1.21.1-2.6.22"
+}
+
+processResources {
+	def version = project.version
+	inputs.property "version", version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 21
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_21
+	targetCompatibility = JavaVersion.VERSION_21
+}
+
+test {
+	useJUnitPlatform()
+	// The audio test writes its WAVs, measurements and README here. Run with -Prender for the full set (every
+	// voice, the WAVs and the calibration targets); a normal build does a quick pass.
+	systemProperty 'radio.testOutput', file('test-output').absolutePath
+	systemProperty 'radio.render', project.hasProperty('render')
+	jvmArgs '--enable-native-access=ALL-UNNAMED'
+	testLogging {
+		showStandardStreams = true
+		events "passed", "failed"
+	}
+}

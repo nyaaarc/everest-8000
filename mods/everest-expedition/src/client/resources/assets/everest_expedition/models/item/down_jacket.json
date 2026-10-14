@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "everest_expedition:item/down_jacket"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "everest_expedition:dyed": 1
+      },
+      "model": "everest_expedition:item/down_jacket_dyed"
+    }
+  ]
+}

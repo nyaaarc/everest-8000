@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "everest_expedition:item/oxygen_cylinder"
+  }
+}

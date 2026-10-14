@@ -1,0 +1,38 @@
+{
+  "parent": "everest:camp_3",
+  "display": {
+    "icon": {
+      "id": "minecraft:glass_bottle"
+    },
+    "title": "Camp 4 (South Col)",
+    "description": "7,906 m · The South Col, at the edge of the death zone",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 21043,
+                "max": 21092
+              },
+              "z": {
+                "min": 8538,
+                "max": 8587
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/camp_4"
+  }
+}

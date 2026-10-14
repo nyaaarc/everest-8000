@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.everest8000.cinema.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CameraMixin",
+    "GameRendererMixin",
+    "MinecraftMixin",
+    "KeyboardInputMixin",
+    "MouseHandlerMixin",
+    "LevelRendererMixin",
+    "LivingEntityRendererMixin",
+    "GuiMixin",
+    "PlayerRendererMixin",
+    "ClientPacketListenerMixin",
+    "WindowMixin",
+    "RenderTargetMixin",
+    "ParticleEngineMixin",
+    "ParticleEngineAccess"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

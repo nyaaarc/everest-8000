@@ -1,0 +1,388 @@
+{
+  "$schema": "../schema/shots.schema.json",
+  "version": 1,
+  "render": {
+    "width": 2560,
+    "height": 1440,
+    "fps": 60,
+    "codec": "hevc_nvenc",
+    "quality": 16,
+    "serverTickSync": false,
+    "sheetFrames": 6,
+    "offscreen": "auto"
+  },
+  "shots": [
+    {
+      "name": "team_on_the_ridge",
+      "durationSec": 10,
+      "camera": {
+        "type": "truck",
+        "target": {
+          "type": "actor",
+          "id": "second",
+          "anchor": "center"
+        },
+        "azimuthDeg": 0,
+        "elevationDeg": 8,
+        "distance": 14,
+        "slideStart": 3,
+        "slideEnd": -3,
+        "track": true,
+        "easing": "sineInOut",
+        "fov": 40
+      },
+      "player": {
+        "visible": false,
+        "ride": true
+      },
+      "hud": {
+        "visible": false
+      },
+      "setup": [
+        {
+          "type": "command",
+          "command": "everest weather clear"
+        },
+        {
+          "type": "command",
+          "command": "everest weather jet 25"
+        },
+        {
+          "type": "time",
+          "dayTime": 1500,
+          "freeze": true
+        }
+      ],
+      "warmup": {
+        "lod": {
+          "enabled": true,
+          "quietSec": 5,
+          "stallSec": 10,
+          "minSec": 8,
+          "timeoutSec": 300,
+          "onTimeout": "fail",
+          "warm": true,
+          "warmSpacing": 160,
+          "warmPointMaxSec": 60,
+          "warmMaxPoints": 10,
+          "warmQuietSec": 2,
+          "frameStability": true,
+          "frameThreshold": 0.6,
+          "frameQuietSec": 3,
+          "stills": false
+        }
+      },
+      "actors": [
+        {
+          "id": "lead",
+          "skin": {
+            "type": "player"
+          },
+          "pos": [
+            20937.5,
+            1791.0,
+            7880.5
+          ],
+          "yaw": 90.0,
+          "outfit": {
+            "suit": true,
+            "hoodStyle": "goggles_down",
+            "hoodDown": false,
+            "mask": false,
+            "packRgb": 13383222
+          },
+          "gait": {
+            "pace": 0.7,
+            "turnRateDegPerSec": 140,
+            "accelSec": 0.7,
+            "wander": 1.2,
+            "wanderWavelength": 18,
+            "lookahead": 2.4,
+            "uphillSlowdown": 0.45,
+            "snowSlowdown": 0.35,
+            "idleLook": true,
+            "breathers": {
+              "everyMinSec": 22,
+              "everyMaxSec": 40,
+              "slopeFactor": 0.8,
+              "minSec": 2.0,
+              "maxSec": 5.0,
+              "altitude": [
+                {
+                  "y": 1200,
+                  "rate": 0.25
+                },
+                {
+                  "y": 1555,
+                  "rate": 1.0
+                },
+                {
+                  "y": 1800,
+                  "rate": 1.3
+                },
+                {
+                  "y": 1980,
+                  "rate": 1.8
+                }
+              ]
+            },
+            "paceAltitude": [
+              {
+                "y": 1200,
+                "factor": 1.0
+              },
+              {
+                "y": 1555,
+                "factor": 0.8
+              },
+              {
+                "y": 1800,
+                "factor": 0.68
+              },
+              {
+                "y": 2000,
+                "factor": 0.58
+              }
+            ]
+          },
+          "seed": 7,
+          "timeline": [
+            {
+              "id": "climb",
+              "action": {
+                "type": "walkTo",
+                "to": [
+                  20869.5,
+                  1853.0,
+                  7880.5
+                ],
+                "speed": "walk",
+                "path": "astar",
+                "arriveRadius": 0.6,
+                "maxNodes": 60000
+              }
+            },
+            {
+              "at": {
+                "type": "near",
+                "pos": [
+                  20905.5,
+                  1819.0,
+                  7880.5
+                ],
+                "radius": 2.5
+              },
+              "action": {
+                "type": "breather",
+                "durationSec": 4.0
+              }
+            }
+          ]
+        },
+        {
+          "id": "second",
+          "skin": {
+            "type": "file",
+            "path": "skins/friend.png",
+            "model": "wide"
+          },
+          "pos": [
+            20943.5,
+            1786.0,
+            7880.5
+          ],
+          "yaw": 90.0,
+          "outfit": {
+            "suit": true,
+            "hoodStyle": "expedition",
+            "hoodDown": false,
+            "mask": false,
+            "packRgb": 3039144
+          },
+          "gait": {
+            "pace": 0.7,
+            "turnRateDegPerSec": 140,
+            "accelSec": 0.7,
+            "wander": 1.2,
+            "wanderWavelength": 18,
+            "lookahead": 2.4,
+            "uphillSlowdown": 0.45,
+            "snowSlowdown": 0.35,
+            "idleLook": true,
+            "breathers": {
+              "everyMinSec": 22,
+              "everyMaxSec": 40,
+              "slopeFactor": 0.8,
+              "minSec": 2.0,
+              "maxSec": 5.0,
+              "altitude": [
+                {
+                  "y": 1200,
+                  "rate": 0.25
+                },
+                {
+                  "y": 1555,
+                  "rate": 1.0
+                },
+                {
+                  "y": 1800,
+                  "rate": 1.3
+                },
+                {
+                  "y": 1980,
+                  "rate": 1.8
+                }
+              ]
+            },
+            "paceAltitude": [
+              {
+                "y": 1200,
+                "factor": 1.0
+              },
+              {
+                "y": 1555,
+                "factor": 0.8
+              },
+              {
+                "y": 1800,
+                "factor": 0.68
+              },
+              {
+                "y": 2000,
+                "factor": 0.58
+              }
+            ]
+          },
+          "seed": 99,
+          "timeline": [
+            {
+              "id": "climb",
+              "action": {
+                "type": "walkTo",
+                "to": [
+                  20875.5,
+                  1847.0,
+                  7880.5
+                ],
+                "speed": "walk",
+                "path": "astar",
+                "arriveRadius": 0.6,
+                "maxNodes": 60000
+              }
+            },
+            {
+              "at": {
+                "type": "time",
+                "sec": 5.5
+              },
+              "action": {
+                "type": "lookAt",
+                "target": {
+                  "type": "actor",
+                  "id": "third",
+                  "anchor": "eyes"
+                },
+                "mode": "glance",
+                "durationSec": 1.8
+              }
+            }
+          ]
+        },
+        {
+          "id": "third",
+          "skin": {
+            "type": "player"
+          },
+          "pos": [
+            20949.5,
+            1781.0,
+            7880.5
+          ],
+          "yaw": 90.0,
+          "outfit": {
+            "suit": true,
+            "hoodStyle": "parka",
+            "hoodDown": false,
+            "mask": true,
+            "packRgb": 14262811
+          },
+          "gait": {
+            "pace": 0.66,
+            "turnRateDegPerSec": 140,
+            "accelSec": 0.7,
+            "wander": 1.2,
+            "wanderWavelength": 18,
+            "lookahead": 2.4,
+            "uphillSlowdown": 0.45,
+            "snowSlowdown": 0.35,
+            "idleLook": true,
+            "breathers": {
+              "everyMinSec": 22,
+              "everyMaxSec": 40,
+              "slopeFactor": 0.8,
+              "minSec": 2.0,
+              "maxSec": 5.0,
+              "altitude": [
+                {
+                  "y": 1200,
+                  "rate": 0.25
+                },
+                {
+                  "y": 1555,
+                  "rate": 1.0
+                },
+                {
+                  "y": 1800,
+                  "rate": 1.3
+                },
+                {
+                  "y": 1980,
+                  "rate": 1.8
+                }
+              ]
+            },
+            "paceAltitude": [
+              {
+                "y": 1200,
+                "factor": 1.0
+              },
+              {
+                "y": 1555,
+                "factor": 0.8
+              },
+              {
+                "y": 1800,
+                "factor": 0.68
+              },
+              {
+                "y": 2000,
+                "factor": 0.58
+              }
+            ]
+          },
+          "seed": 4242,
+          "timeline": [
+            {
+              "at": {
+                "type": "time",
+                "sec": 0.4
+              },
+              "action": {
+                "type": "walkTo",
+                "to": [
+                  20881.5,
+                  1841.0,
+                  7880.5
+                ],
+                "speed": "walk",
+                "path": "astar",
+                "arriveRadius": 0.6,
+                "maxNodes": 60000
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

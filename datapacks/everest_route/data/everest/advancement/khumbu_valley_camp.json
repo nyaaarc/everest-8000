@@ -1,0 +1,38 @@
+{
+  "parent": "everest:pangboche",
+  "display": {
+    "icon": {
+      "id": "minecraft:campfire"
+    },
+    "title": "Khumbu valley camp",
+    "description": "4,540 m · Last lodge below the glacier",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 14448,
+                "max": 14497
+              },
+              "z": {
+                "min": 11280,
+                "max": 11329
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/khumbu_valley_camp"
+  }
+}

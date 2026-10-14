@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/shots.schema.json",
+  "version": 1,
+  "render": {
+    "width": 2560,
+    "height": 1440,
+    "fps": 60,
+    "codec": "hevc_nvenc",
+    "quality": 16
+  },
+  "shots": [
+    {
+      "name": "summit_orbit",
+      "durationSec": 8,
+      "camera": {
+        "type": "orbit",
+        "center": {
+          "type": "point",
+          "pos": [
+            20706.5,
+            2032,
+            7774.5
+          ]
+        },
+        "radius": 170,
+        "height": 30,
+        "startDeg": 250,
+        "endDeg": 285,
+        "fov": 50,
+        "easing": "sineInOut"
+      },
+      "player": {
+        "visible": false,
+        "ride": true
+      },
+      "setup": [
+        {
+          "type": "time",
+          "dayTime": 12250
+        },
+        {
+          "type": "command",
+          "command": "weather clear"
+        }
+      ]
+    }
+  ],
+  "teardown": [
+    {
+      "type": "command",
+      "command": "weather clear"
+    }
+  ]
+}

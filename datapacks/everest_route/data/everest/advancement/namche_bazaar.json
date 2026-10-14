@@ -1,0 +1,38 @@
+{
+  "parent": "everest:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": "Namche Bazaar",
+    "description": "3,440 m · Sherpa capital and the first acclimatization stop",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 9652,
+                "max": 9781
+              },
+              "z": {
+                "min": 17172,
+                "max": 17301
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/namche_bazaar"
+  }
+}

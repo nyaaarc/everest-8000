@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.everest8000.expedition.client.compat.betterclouds",
+  "plugin": "dev.everest8000.expedition.client.compat.betterclouds.BetterCloudsMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BetterCloudsConfigMixin",
+    "BetterCloudsFarPlaneMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

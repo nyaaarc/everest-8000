@@ -1,0 +1,10 @@
+{
+    "vertex": "everest_expedition:fullscreen",
+    "fragment": "everest_expedition:plume",
+    "samplers": [
+        { "name": "SceneDepth" },
+        { "name": "Heights" },
+        { "name": "Horizon" }
+    ],
+    "uniforms": []
+}

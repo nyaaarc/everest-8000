@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "everest_expedition",
+  "version": "${version}",
+  "name": "Everest Expedition",
+  "description": "Survival on the Mt. Everest 8000 server: altitude storms, jet-stream wind, frostbite, a down suit, bottled oxygen and hypoxia, wildlife only down in the valleys, an hour-long day and clouds at their real height.",
+  "authors": [
+    "nyaaarc"
+  ],
+  "contact": {
+    "homepage": "https://github.com/nyaaarc/everest-8000",
+    "sources": "https://github.com/nyaaarc/everest-8000",
+    "issues": "https://github.com/nyaaarc/everest-8000/issues"
+  },
+  "license": "GPL-3.0-only",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.everest8000.expedition.EverestExpedition"
+    ],
+    "client": [
+      "dev.everest8000.expedition.client.EverestExpeditionClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "everest_expedition.mixins.json",
+      "environment": "*"
+    },
+    {
+      "config": "everest_expedition.client.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "everest_expedition.particlerain.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "everest_expedition.travelersbackpack.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "everest_expedition.distanthorizons.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "everest_expedition.betterclouds.mixins.json",
+      "environment": "client"
+    },
+    {
+      "config": "everest_expedition.nicerskies.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "particlerain": "*"
+  }
+}

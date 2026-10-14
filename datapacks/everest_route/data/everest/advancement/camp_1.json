@@ -1,0 +1,38 @@
+{
+  "parent": "everest:base_camp",
+  "display": {
+    "icon": {
+      "id": "minecraft:ladder"
+    },
+    "title": "Camp 1",
+    "description": "6,065 m · Top of the Khumbu Icefall",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 18300,
+                "max": 18349
+              },
+              "z": {
+                "min": 7982,
+                "max": 8031
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/camp_1"
+  }
+}

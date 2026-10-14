@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "everest_radio",
+  "version": "${version}",
+  "name": "Everest Radio",
+  "description": "Expedition radios for Simple Voice Chat on the Mt. Everest 8000 server: hold a radio to transmit, carry one to listen. The signal breaks up with distance and behind terrain but never goes silent, and everyone sees a talker raise their radio to their face.",
+  "authors": [
+    "nyaaarc"
+  ],
+  "contact": {
+    "homepage": "https://github.com/nyaaarc/everest-8000",
+    "sources": "https://github.com/nyaaarc/everest-8000",
+    "issues": "https://github.com/nyaaarc/everest-8000/issues"
+  },
+  "license": "GPL-3.0-only",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.everest8000.radio.EverestRadio"
+    ],
+    "client": [
+      "dev.everest8000.radio.client.EverestRadioClient"
+    ],
+    "voicechat": [
+      "dev.everest8000.radio.voice.RadioVoicechatPlugin"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "everest_radio.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "voicechat": ">=1.21.1-2.6.0"
+  }
+}

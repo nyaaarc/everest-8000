@@ -1,0 +1,14 @@
+#
+#waypoint:name:initials:x:y:z:color:disabled:type:set:rotate_on_tp:tp_yaw:visibility_type:destination
+#
+waypoint:Lukla:L:10976:-1285:23352:10:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Namche Bazaar:N:9716:-989:17236:10:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Tengboche:T:12627:-714:15660:10:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Pangboche:P:14498:-597:14184:10:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Khumbu valley camp:K:14472:-358:11304:10:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Everest Base Camp:EB:16747:63:7309:6:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Camp 1:C1:18324:543:8006:11:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Camp 2:C2:19350:731:8150:11:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Camp 3:C3:20430:1193:8917:11:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Camp 4 (South Col):C4:21067:1556:8562:6:false:0:gui.xaero_default:false:0:LOCAL:false
+waypoint:Summit:S:20706:2031:7774:12:false:0:gui.xaero_default:false:0:LOCAL:false

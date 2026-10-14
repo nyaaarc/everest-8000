@@ -1,0 +1,1356 @@
+{
+ "version": 1,
+ "render": {
+  "width": 2560,
+  "height": 1440,
+  "fps": 60,
+  "codec": "hevc_nvenc",
+  "quality": 16,
+  "serverTickSync": false,
+  "sheetFrames": 6
+ },
+ "shots": [
+  {
+   "name": "lukla_dawn",
+   "durationSec": 7,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0,
+      "pos": [
+       10950.0,
+       -916.0,
+       24150.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        11600,
+        -350,
+        17500
+       ]
+      }
+     },
+     {
+      "t": 7,
+      "pos": [
+       10990.0,
+       -912.0,
+       23700.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        11600,
+        -350,
+        17500
+       ]
+      }
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "sineInOut",
+    "fov": 42
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 23750,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6
+   }
+  },
+  {
+   "name": "lukla_runway",
+   "durationSec": 6,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0.0,
+      "pos": [
+       10450.0,
+       -1321.0,
+       23352.0
+      ],
+      "yaw": -90,
+      "pitch": 3
+     },
+     {
+      "t": 2.0,
+      "pos": [
+       10600.0,
+       -1306.0,
+       23352.0
+      ],
+      "yaw": -90,
+      "pitch": 3
+     },
+     {
+      "t": 4.0,
+      "pos": [
+       10750.0,
+       -1273.0,
+       23352.0
+      ],
+      "yaw": -90,
+      "pitch": 3
+     },
+     {
+      "t": 6.0,
+      "pos": [
+       10900.0,
+       -1273.0,
+       23352.0
+      ],
+      "yaw": -90,
+      "pitch": 3
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "linear",
+    "fov": 55,
+    "shake": {
+     "amplitudeDeg": 0.12,
+     "frequencyHz": 0.6
+    }
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 400,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 5,
+    "scout": true,
+    "scoutSpeed": 2
+   }
+  },
+  {
+   "name": "namche_orbit",
+   "durationSec": 7,
+   "camera": {
+    "type": "orbit",
+    "center": {
+     "type": "point",
+     "pos": [
+      9716.5,
+      -985.0,
+      17236.5
+     ]
+    },
+    "radius": 260,
+    "height": 202.0,
+    "startDeg": 150,
+    "endDeg": 185,
+    "easing": "sineInOut",
+    "fov": 42
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 1200,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6
+   }
+  },
+  {
+   "name": "tengboche_peaks",
+   "durationSec": 7,
+   "camera": {
+    "type": "truck",
+    "target": {
+     "type": "point",
+     "pos": [
+      12627.5,
+      -705.0,
+      15660.5
+     ],
+     "offset": [
+      0.0,
+      75.0,
+      0.0
+     ]
+    },
+    "azimuthDeg": 40,
+    "elevationDeg": 8,
+    "distance": 240,
+    "slideStart": -45,
+    "slideEnd": 45,
+    "track": true,
+    "easing": "sineInOut",
+    "fov": 40
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 11300,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6
+   }
+  },
+  {
+   "name": "khumbu_glacier",
+   "durationSec": 7,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0,
+      "pos": [
+       15350.0,
+       -18.0,
+       9800.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20706.5,
+        2032.0,
+        7774.5
+       ]
+      }
+     },
+     {
+      "t": 7,
+      "pos": [
+       15750.0,
+       2.0,
+       9150.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20706.5,
+        2032.0,
+        7774.5
+       ]
+      }
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "linear",
+    "fov": 40
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 10200,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6,
+    "scout": true,
+    "scoutSpeed": 2
+   }
+  },
+  {
+   "name": "basecamp_massif",
+   "durationSec": 7,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0,
+      "pos": [
+       16700.0,
+       94.0,
+       7330.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20706.5,
+        2032.0,
+        7774.5
+       ]
+      }
+     },
+     {
+      "t": 7,
+      "pos": [
+       16660.0,
+       140.0,
+       7340.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20706.5,
+        2032.0,
+        7774.5
+       ]
+      }
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "sineInOut",
+    "fov": 30
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 11700,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 8
+   }
+  },
+  {
+   "name": "icefall_ladders",
+   "durationSec": 6,
+   "camera": {
+    "type": "orbit",
+    "center": {
+     "type": "point",
+     "pos": [
+      17944.0,
+      280.0,
+      7248.0
+     ]
+    },
+    "radius": 40,
+    "height": 38,
+    "startDeg": -25,
+    "endDeg": 20,
+    "easing": "sineInOut",
+    "fov": 55
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 9300,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 30,
+    "lodSettleSec": 4
+   }
+  },
+  {
+   "name": "icefall_wide",
+   "durationSec": 7,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0,
+      "pos": [
+       17250.0,
+       542.0,
+       7420.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        19300,
+        700,
+        8150
+       ]
+      }
+     },
+     {
+      "t": 7,
+      "pos": [
+       17520.0,
+       542.0,
+       7520.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        19300,
+        700,
+        8150
+       ]
+      }
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "linear",
+    "fov": 45
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 11000,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6
+   }
+  },
+  {
+   "name": "cwm_flight",
+   "durationSec": 6,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0,
+      "pos": [
+       18450.0,
+       623.0,
+       8030.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20600,
+        1400,
+        8500
+       ]
+      }
+     },
+     {
+      "t": 6,
+      "pos": [
+       18800.0,
+       668.0,
+       8080.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20600,
+        1400,
+        8500
+       ]
+      }
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "linear",
+    "fov": 45
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 8000,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6,
+    "scout": true,
+    "scoutSpeed": 2
+   }
+  },
+  {
+   "name": "camp3_view",
+   "durationSec": 7,
+   "camera": {
+    "type": "orbit",
+    "center": {
+     "type": "point",
+     "pos": [
+      20430.5,
+      1194.0,
+      8917.5
+     ]
+    },
+    "radius": 80,
+    "height": 117.0,
+    "startDeg": -55,
+    "endDeg": -75,
+    "easing": "sineInOut",
+    "lookAt": {
+     "type": "point",
+     "pos": [
+      17500,
+      300,
+      7600
+     ]
+    },
+    "fov": 55
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 10800,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6
+   }
+  },
+  {
+   "name": "southcol_summit",
+   "durationSec": 8,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0,
+      "pos": [
+       21060.0,
+       1579.0,
+       8540.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20706.5,
+        2032.0,
+        7774.5
+       ]
+      }
+     },
+     {
+      "t": 8,
+      "pos": [
+       20980.0,
+       1662.0,
+       8360.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20706.5,
+        2032.0,
+        7774.5
+       ]
+      }
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "sineInOut",
+    "fov": 40
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 23900,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6
+   }
+  },
+  {
+   "name": "summit_clouds",
+   "durationSec": 8,
+   "camera": {
+    "type": "orbit",
+    "center": {
+     "type": "point",
+     "pos": [
+      20706.5,
+      2032.0,
+      7774.5
+     ]
+    },
+    "radius": 170,
+    "height": 30,
+    "startDeg": 248,
+    "endDeg": 283,
+    "easing": "sineInOut",
+    "fov": 50
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 12250,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 8
+   }
+  },
+  {
+   "name": "final_pullback",
+   "durationSec": 8,
+   "camera": {
+    "type": "dolly",
+    "target": {
+     "type": "point",
+     "pos": [
+      20706.5,
+      2032.0,
+      7774.5
+     ]
+    },
+    "azimuthDeg": 292,
+    "elevationDeg": 14,
+    "distanceStart": 170,
+    "distanceEnd": 1100,
+    "easing": "easeInOut",
+    "fov": 42
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 12100,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 8,
+    "scout": true
+   }
+  },
+  {
+   "name": "spindrift_ridge",
+   "durationSec": 7,
+   "camera": {
+    "type": "static",
+    "pos": [
+     20905.5,
+     1653.6,
+     8270.5
+    ],
+    "lookAt": {
+     "type": "point",
+     "pos": [
+      20706.5,
+      1992.0,
+      7774.5
+     ]
+    },
+    "fov": 60,
+    "shake": {
+     "amplitudeDeg": 0.5,
+     "frequencyHz": 1.1
+    }
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 7600,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 230"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 30,
+    "lodSettleSec": 4
+   }
+  },
+  {
+   "name": "frost_fp",
+   "durationSec": 7,
+   "camera": {
+    "type": "firstPerson",
+    "fov": 70,
+    "shake": {
+     "amplitudeDeg": 0.25,
+     "frequencyHz": 0.7
+    }
+   },
+   "player": {
+    "visible": true,
+    "ride": false,
+    "gamemode": "creative",
+    "pos": [
+     21030.5,
+     1548,
+     8500.5
+    ],
+    "yaw": 155.9,
+    "pitch": -12
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 7200,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 180"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 30,
+    "lodSettleSec": 4
+   },
+   "events": [
+    {
+     "atSec": 0.5,
+     "action": {
+      "type": "frozen",
+      "fraction": 0.97,
+      "durationSec": 5.5
+     }
+    }
+   ],
+   "teardown": [
+    {
+     "type": "frozen",
+     "fraction": 0.0,
+     "durationSec": 0.0
+    }
+   ]
+  },
+  {
+   "name": "oxygen_fp",
+   "durationSec": 7,
+   "camera": {
+    "type": "firstPerson",
+    "fov": 70
+   },
+   "player": {
+    "visible": true,
+    "ride": false,
+    "gamemode": "adventure",
+    "pos": [
+     19340.5,
+     728,
+     8170.5
+    ],
+    "yaw": -79.7,
+    "pitch": -14
+   },
+   "hud": {
+    "visible": true,
+    "chat": false,
+    "crosshair": false,
+    "hand": false
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 9800,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    },
+    {
+     "type": "selectSlot",
+     "slot": 5
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 30,
+    "lodSettleSec": 4
+   },
+   "events": [
+    {
+     "atSec": 0.0,
+     "action": {
+      "type": "command",
+      "command": "everest oxygen spo2 0.75"
+     }
+    },
+    {
+     "atSec": 0.8,
+     "action": {
+      "type": "command",
+      "command": "everest oxygen spo2 0.6"
+     }
+    },
+    {
+     "atSec": 1.7000000000000002,
+     "action": {
+      "type": "command",
+      "command": "everest oxygen spo2 0.48"
+     }
+    },
+    {
+     "atSec": 2.6,
+     "action": {
+      "type": "command",
+      "command": "everest oxygen spo2 0.36"
+     }
+    },
+    {
+     "atSec": 3.5,
+     "action": {
+      "type": "command",
+      "command": "everest oxygen spo2 0.26"
+     }
+    },
+    {
+     "atSec": 4.4,
+     "action": {
+      "type": "command",
+      "command": "everest oxygen spo2 0.17"
+     }
+    },
+    {
+     "atSec": 5.3,
+     "action": {
+      "type": "command",
+      "command": "everest oxygen spo2 0.1"
+     }
+    }
+   ],
+   "teardown": [
+    {
+     "type": "command",
+     "command": "everest oxygen spo2 1"
+    },
+    {
+     "type": "command",
+     "command": "gamemode spectator"
+    }
+   ]
+  },
+  {
+   "name": "night_basecamp",
+   "durationSec": 8,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0,
+      "pos": [
+       16640.0,
+       67.0,
+       7405.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        18500,
+        420,
+        7700
+       ]
+      }
+     },
+     {
+      "t": 8,
+      "pos": [
+       16670.0,
+       75.0,
+       7400.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        18500,
+        420,
+        7700
+       ]
+      }
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "sineInOut",
+    "fov": 55
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 18000,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 30,
+    "lodSettleSec": 5
+   }
+  },
+  {
+   "name": "night_camp2",
+   "durationSec": 8,
+   "camera": {
+    "type": "keyframes",
+    "keyframes": [
+     {
+      "t": 0,
+      "pos": [
+       19293.0,
+       726.0,
+       8146.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20706.5,
+        2032.0,
+        7774.5
+       ]
+      }
+     },
+     {
+      "t": 8,
+      "pos": [
+       19306.0,
+       728.0,
+       8142.0
+      ],
+      "lookAt": {
+       "type": "point",
+       "pos": [
+        20706.5,
+        2032.0,
+        7774.5
+       ]
+      }
+     }
+    ],
+    "interpolation": "catmullRom",
+    "easing": "sineInOut",
+    "fov": 55
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 18200,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 15"
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 30,
+    "lodSettleSec": 5
+   }
+  },
+  {
+   "name": "storm_summit",
+   "durationSec": 9,
+   "camera": {
+    "type": "orbit",
+    "center": {
+     "type": "point",
+     "pos": [
+      20706.5,
+      2032.0,
+      7774.5
+     ]
+    },
+    "radius": 130,
+    "height": 18,
+    "startDeg": 95,
+    "endDeg": 112,
+    "easing": "linear",
+    "fov": 48
+   },
+   "player": {
+    "visible": false,
+    "ride": true
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 8500,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 120"
+    },
+    {
+     "type": "wait",
+     "seconds": 35
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 40,
+    "lodSettleSec": 6
+   },
+   "events": [
+    {
+     "atSec": 0.0,
+     "action": {
+      "type": "command",
+      "command": "tick rate 80"
+     }
+    },
+    {
+     "atSec": 0.05,
+     "action": {
+      "type": "command",
+      "command": "everest weather storm 1 6 1500"
+     }
+    }
+   ],
+   "teardown": [
+    {
+     "type": "command",
+     "command": "tick rate 20"
+    },
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    }
+   ]
+  },
+  {
+   "name": "whiteout_fp",
+   "durationSec": 8,
+   "camera": {
+    "type": "firstPerson",
+    "fov": 70
+   },
+   "player": {
+    "visible": true,
+    "ride": false,
+    "gamemode": "creative",
+    "pos": [
+     21000.5,
+     1573,
+     8420.5
+    ],
+    "yaw": 155.5,
+    "pitch": -12
+   },
+   "setup": [
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    },
+    {
+     "type": "command",
+     "command": "everest weather shower 0 1"
+    },
+    {
+     "type": "time",
+     "dayTime": 8800,
+     "freeze": true
+    },
+    {
+     "type": "command",
+     "command": "everest weather jet 150"
+    },
+    {
+     "type": "wait",
+     "seconds": 35
+    }
+   ],
+   "warmup": {
+    "chunksTimeoutSec": 30,
+    "lodSettleSec": 4
+   },
+   "events": [
+    {
+     "atSec": 0.0,
+     "action": {
+      "type": "command",
+      "command": "tick rate 80"
+     }
+    },
+    {
+     "atSec": 0.05,
+     "action": {
+      "type": "command",
+      "command": "everest weather storm 1 6 1400"
+     }
+    }
+   ],
+   "teardown": [
+    {
+     "type": "command",
+     "command": "tick rate 20"
+    },
+    {
+     "type": "command",
+     "command": "everest weather clear"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+    "vertex": "everest_expedition:fullscreen",
+    "fragment": "everest_expedition:plume_composite",
+    "samplers": [
+        { "name": "PlumeSampler" },
+        { "name": "BackgroundSampler" }
+    ],
+    "uniforms": []
+}

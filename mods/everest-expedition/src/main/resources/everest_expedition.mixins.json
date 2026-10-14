@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.everest8000.expedition.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CatSpawnerMixin",
+    "ItemEntityPickupMixin",
+    "LivingEntityHealMixin",
+    "NaturalSpawnerMixin",
+    "ServerLevelSpawnersMixin",
+    "ServerLevelTimeMixin",
+    "ServerMovementCheckMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

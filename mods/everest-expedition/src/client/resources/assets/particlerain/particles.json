@@ -1,0 +1,20 @@
+{
+  "everest_blizzard_snow": {
+    "density": 0.9,
+    "precipitation": [
+      "SNOW"
+    ],
+    "weather": "ONLY_DURING_STORMY_WEATHER",
+    "gravity": 0.12,
+    "windStrength": 0.1,
+    "stormWindStrength": 0.1,
+    "rotationAmount": 0.6,
+    "size": 0.6,
+    "spriteLocations": [
+      "particlerain:heavy_snow_0",
+      "particlerain:heavy_snow_1",
+      "particlerain:heavy_snow_2",
+      "particlerain:heavy_snow_3"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "parent": "everest:khumbu_valley_camp",
+  "display": {
+    "icon": {
+      "id": "minecraft:white_banner"
+    },
+    "title": "Everest Base Camp",
+    "description": "5,364 m · Tents on the glacier. The Khumbu Icefall starts here",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 16683,
+                "max": 16812
+              },
+              "z": {
+                "min": 7245,
+                "max": 7374
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/base_camp",
+    "loot": [
+      "everest:kits/base_camp"
+    ]
+  }
+}

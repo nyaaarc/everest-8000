@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "everest_expedition:item/down_pants_dyed",
+    "layer1": "everest_expedition:item/down_pants_dyed_overlay"
+  }
+}

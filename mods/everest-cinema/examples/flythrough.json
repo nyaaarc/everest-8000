@@ -1,0 +1,79 @@
+{
+  "$schema": "../schema/shots.schema.json",
+  "version": 1,
+  "render": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "codec": "h264_nvenc",
+    "quality": 18
+  },
+  "shots": [
+    {
+      "name": "valley_flythrough",
+      "durationSec": 10,
+      "camera": {
+        "type": "keyframes",
+        "interpolation": "catmullRom",
+        "easing": "easeInOut",
+        "constantSpeed": true,
+        "durationSec": 10,
+        "fov": 45,
+        "lookAt": {
+          "type": "point",
+          "pos": [
+            20706.5,
+            2032,
+            7774.5
+          ]
+        },
+        "keyframes": [
+          {
+            "pos": [
+              15350,
+              110,
+              9800
+            ]
+          },
+          {
+            "pos": [
+              15550,
+              120,
+              9450
+            ]
+          },
+          {
+            "pos": [
+              15750,
+              100,
+              9150
+            ]
+          },
+          {
+            "pos": [
+              16050,
+              140,
+              8800
+            ]
+          }
+        ]
+      },
+      "player": {
+        "visible": false,
+        "ride": true
+      },
+      "warmup": {
+        "chunksTimeoutSec": 40,
+        "lodSettleSec": 6,
+        "scout": true,
+        "scoutSpeed": 2
+      },
+      "setup": [
+        {
+          "type": "time",
+          "dayTime": 10200
+        }
+      ]
+    }
+  ]
+}

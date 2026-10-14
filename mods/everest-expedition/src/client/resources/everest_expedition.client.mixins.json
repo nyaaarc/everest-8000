@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.everest8000.expedition.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BiomePrecipitationMixin",
+    "ClientLevelSkyMixin",
+    "ClientLevelTimeMixin",
+    "ClientPacketListenerTimeMixin",
+    "DimensionSpecialEffectsMixin",
+    "FogRendererMixin",
+    "GameRendererMixin",
+    "GameRendererWindMixin",
+    "GuiFrostMixin",
+    "LevelWeatherMixin",
+    "LocalPlayerSprintMixin",
+    "ParticleAccessor",
+    "ParticleEngineAccessor",
+    "ParticleEngineMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

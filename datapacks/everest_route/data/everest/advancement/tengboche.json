@@ -1,0 +1,38 @@
+{
+  "parent": "everest:namche_bazaar",
+  "display": {
+    "icon": {
+      "id": "minecraft:bell"
+    },
+    "title": "Tengboche",
+    "description": "3,867 m · Monastery with Everest on the skyline",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "arrive": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:overworld",
+            "position": {
+              "x": {
+                "min": 12587,
+                "max": 12668
+              },
+              "z": {
+                "min": 15620,
+                "max": 15701
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "everest:respawn/tengboche"
+  }
+}

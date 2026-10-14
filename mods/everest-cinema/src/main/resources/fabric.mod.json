@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "everest_cinema",
+  "version": "${version}",
+  "name": "Cinema",
+  "description": "Scriptable cinematic camera, player puppet and frame-stepped video capture, driven over a localhost JSON-RPC API. Does nothing unless enabled in config/everest-cinema.json.",
+  "authors": [
+    "nyaaarc"
+  ],
+  "contact": {
+    "homepage": "https://github.com/nyaaarc/everest-8000",
+    "sources": "https://github.com/nyaaarc/everest-8000",
+    "issues": "https://github.com/nyaaarc/everest-8000/issues"
+  },
+  "license": "GPL-3.0-only",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.everest8000.cinema.CinemaClient"]
+  },
+  "mixins": ["everest_cinema.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "fabric-api": "*"
+  }
+}
