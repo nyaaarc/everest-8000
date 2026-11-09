@@ -1,3 +1,8 @@
+> [!WARNING]
+> **NOT FOR PUBLIC RELEASE YET, BUT I SWEAR I'M STILL WORKING ON IT.**
+>
+> This pack hasn't been officially released. Things here may change or break without notice. A proper release is coming.
+
 # Everest 8000
 
 A pack for climbing mountains with friends, for Minecraft Java 1.21.1 (Fabric).
