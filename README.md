@@ -1,7 +1,7 @@
 > [!WARNING]
 > **NOT FOR PUBLIC RELEASE YET, BUT I SWEAR I'M STILL WORKING ON IT.**
 >
-> This pack hasn't been officially released. Things here may change or break without notice. A proper release is coming.
+> I forgot i made this repo public, you're welcome to try to follow my jank ass setup but an actual polished release is coming soon
 
 # Everest 8000
 
